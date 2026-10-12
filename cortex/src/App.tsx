@@ -10,7 +10,7 @@ export default function App() {
   const [currentScreen, setCurrentScreen] = useState<Screen>('home');
 
   return (
-    <div className="min-h-screen bg-white max-w-md mx-auto relative">
+    <div className="min-h-screen bg-white max-w-[768px] mx-auto relative">
       {/* Screen Content */}
       <div className="pb-24 overflow-y-auto">
         {currentScreen === 'home' && <Home />}
@@ -19,7 +19,7 @@ export default function App() {
       </div>
 
       {/* Bottom Navigation */}
-      <div className="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white border-t border-gray-200 px-6 py-4 flex items-center justify-between">
+      <div className="fixed bottom-0 left-0 right-0 max-w-[768px] mx-auto bg-white border-t border-gray-200 px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => setCurrentScreen('home')}
           className="flex flex-col items-center gap-1 flex-1"
